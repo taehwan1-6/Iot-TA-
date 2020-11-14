@@ -31,7 +31,7 @@ def main():
             'pins' : pins
         }
         # 업데이트 된 templateData 갑ㅅ들을 homeLED.html로 리턴
-        return render_template("homeLED.htm", **templateData)
+        return render_template("homeLED.html", **templateData)
 
 # URL 주소 끝에 "/핀번호/<action>"을 붙혀서 접근시에 action 값 에 따라 동작
 @app.route("/<changePin>/<action>")
